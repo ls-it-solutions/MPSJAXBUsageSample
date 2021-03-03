@@ -1,0 +1,20 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CommandTest.shouldAnswerWithTrue" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+    <module name="simple-api-with-jaxb-annotations" />
+    <useClassPathOnly />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="de.lsitsolutions.jaxb.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <option name="PACKAGE_NAME" value="de.lsitsolutions.jaxb" />
+    <option name="MAIN_CLASS_NAME" value="de.lsitsolutions.jaxb.CommandTest" />
+    <option name="METHOD_NAME" value="shouldAnswerWithTrue" />
+    <option name="TEST_OBJECT" value="method" />
+    <option name="PARAMETERS" value="" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

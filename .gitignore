@@ -1,0 +1,37 @@
+.DS_Store
+.log
+
+junitvmwatcher*.properties
+TEST-*.xml
+junit*.properties
+
+# -----------------------------------------------------------
+# MPS project
+workspace.xml
+libraries.xml
+
+# -----------------------------------------------------------
+# MPS languages and solutions
+classes_gen
+source_gen
+source_gen.caches
+result_gen
+test_gen
+test_gen.caches
+doc_gen
+
+
+
+# -----------------------------------------------------------
+# Temp folders
+**/temp
+
+# -----------------------------------------------------------
+# Java class file
+*.class
+
+**/trace.info
+
+# -----------------------------------------------------------
+# Maven target folders
+**/target/
