@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="build MPSJAXBUsageSample" type="Build Script" factoryName="Build Script">
+    <myNodePointer>
+      <MyState>
+        <option name="myNodePointer" value="r:e54d65e8-f318-4495-a549-fc853a7038b2(MPSJAXBUsageSample.build)/389711050816411049" />
+        <option name="myNodeText" value="MPSJAXBUsageSample.build.MPSJAXBUsageSample" />
+      </MyState>
+    </myNodePointer>
+    <mySettings>
+      <MyState>
+        <option name="myUseOtherAntLocation" value="false" />
+        <option name="myOtherAntLocation" value="" />
+        <option name="myAntOptions" value="clean build" />
+      </MyState>
+    </mySettings>
+    <method v="2" />
+  </configuration>
+</component>

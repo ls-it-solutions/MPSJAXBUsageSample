@@ -1,0 +1,26 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Class UsingClass" type="Java Application" factoryName="Java">
+    <myNode>
+      <MyState>
+        <option name="myNodePointer" value="r:a1dd195f-383b-43fd-8304-9d5c0e3de6d3(de.lsitsolutions.jaxb.sample)/389711050816332381" />
+        <option name="myNodeText" value="de.lsitsolutions.jaxb.sample.UsingClass" />
+      </MyState>
+    </myNode>
+    <myRunParameters>
+      <MyState>
+        <option name="myJavaParameters">
+          <JavaRunParameters>
+            <option name="jrePath" value="" />
+            <option name="programParameters" value="" />
+            <option name="useAlternativeJre" value="false" />
+            <option name="vmOptions" value="" />
+            <option name="workingDirectory" value="/" />
+          </JavaRunParameters>
+        </option>
+      </MyState>
+    </myRunParameters>
+    <method v="2">
+      <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.MakeNodePointers_BeforeTask" enabled="true" />
+    </method>
+  </configuration>
+</component>
