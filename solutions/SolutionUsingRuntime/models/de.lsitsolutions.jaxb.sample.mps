@@ -6,8 +6,9 @@
   </languages>
   <imports>
     <import index="bzjo" ref="0de22749-2d9d-4e26-a2d9-386b7a337751/java:de.lsitsolutions.jaxb(RuntimeUsingJAXB/)" />
-    <import index="eaz0" ref="72acac8d-4dd3-4bac-a8ea-ee97162c24e8/java:javax.xml.bind(JAXB/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="eaz0" ref="8e95167d-4ec0-4b7d-b2e5-7350fe0c5fc9/java:javax.xml.bind(mps-jaxb-runtime/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -26,8 +27,15 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -96,16 +104,30 @@
       <node concept="3cqZAl" id="lCy2bcWUah" role="3clF45" />
       <node concept="3Tm1VV" id="lCy2bcWUai" role="1B3o_S" />
       <node concept="3clFbS" id="lCy2bcWUaj" role="3clF47">
+        <node concept="3clFbF" id="7vTu8gzZR1B" role="3cqZAp">
+          <node concept="2OqwBi" id="7vTu8gzZR1C" role="3clFbG">
+            <node concept="10M0yZ" id="7vTu8gzZR1D" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7vTu8gzZR1E" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="Xl_RD" id="7vTu8gzZSpT" role="37wK5m">
+                <property role="Xl_RC" value="starting" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="lCy2bcWXjb" role="3cqZAp">
           <node concept="3cpWsn" id="lCy2bcWXjc" role="3cpWs9">
             <property role="TrG5h" value="jaxbContext" />
-            <node concept="3uibUv" id="lCy2bcWXfg" role="1tU5fm">
+            <node concept="3uibUv" id="7vTu8gzZBNW" role="1tU5fm">
               <ref role="3uigEE" to="eaz0:~JAXBContext" resolve="JAXBContext" />
             </node>
-            <node concept="2YIFZM" id="lCy2bcWXjd" role="33vP2m">
+            <node concept="2YIFZM" id="7vTu8gzZCaD" role="33vP2m">
               <ref role="37wK5l" to="eaz0:~JAXBContext.newInstance(java.lang.Class...)" resolve="newInstance" />
               <ref role="1Pybhc" to="eaz0:~JAXBContext" resolve="JAXBContext" />
-              <node concept="3VsKOn" id="lCy2bcWXje" role="37wK5m">
+              <node concept="3VsKOn" id="7vTu8gzZCaE" role="37wK5m">
                 <ref role="3VsUkX" to="bzjo:~Command" resolve="Command" />
               </node>
             </node>
@@ -114,7 +136,7 @@
         <node concept="3cpWs8" id="lCy2bcWX$d" role="3cqZAp">
           <node concept="3cpWsn" id="lCy2bcWX$e" role="3cpWs9">
             <property role="TrG5h" value="unmarshaller" />
-            <node concept="3uibUv" id="lCy2bcWXzm" role="1tU5fm">
+            <node concept="3uibUv" id="7vTu8gzZIBD" role="1tU5fm">
               <ref role="3uigEE" to="eaz0:~Unmarshaller" resolve="Unmarshaller" />
             </node>
             <node concept="2OqwBi" id="lCy2bcWX$f" role="33vP2m">
@@ -127,18 +149,55 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="lCy2bcWV5$" role="3cqZAp">
-          <node concept="2OqwBi" id="lCy2bcWXFQ" role="3clFbG">
-            <node concept="37vLTw" id="lCy2bcWX$i" role="2Oq$k0">
-              <ref role="3cqZAo" node="lCy2bcWX$e" resolve="unmarshaller" />
+        <node concept="3cpWs8" id="7vTu8gzZNTJ" role="3cqZAp">
+          <node concept="3cpWsn" id="7vTu8gzZNTK" role="3cpWs9">
+            <property role="TrG5h" value="unmarshalled" />
+            <node concept="3uibUv" id="7vTu8gzZOma" role="1tU5fm">
+              <ref role="3uigEE" to="bzjo:~Command" resolve="Command" />
             </node>
-            <node concept="liA8E" id="lCy2bcWXIe" role="2OqNvi">
-              <ref role="37wK5l" to="eaz0:~Unmarshaller.unmarshal(java.io.Reader)" resolve="unmarshal" />
-              <node concept="2ShNRf" id="lCy2bcWXJ7" role="37wK5m">
-                <node concept="1pGfFk" id="lCy2bcWZ6C" role="2ShVmc">
-                  <ref role="37wK5l" to="guwi:~StringReader.&lt;init&gt;(java.lang.String)" resolve="StringReader" />
-                  <node concept="Xl_RD" id="lCy2bcXbie" role="37wK5m">
-                    <property role="Xl_RC" value="&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot; standalone=\&quot;yes\&quot;?&gt;&lt;command name=\&quot;Hello JAXB\&quot;&gt;&lt;subCommand name=\&quot;a subCommand\&quot;/&gt;&lt;/command&gt;" />
+            <node concept="10QFUN" id="7vTu8gzZOH2" role="33vP2m">
+              <node concept="3uibUv" id="7vTu8gzZOLC" role="10QFUM">
+                <ref role="3uigEE" to="bzjo:~Command" resolve="Command" />
+              </node>
+              <node concept="2OqwBi" id="7vTu8gzZNTL" role="10QFUP">
+                <node concept="37vLTw" id="7vTu8gzZNTM" role="2Oq$k0">
+                  <ref role="3cqZAo" node="lCy2bcWX$e" resolve="unmarshaller" />
+                </node>
+                <node concept="liA8E" id="7vTu8gzZNTN" role="2OqNvi">
+                  <ref role="37wK5l" to="eaz0:~Unmarshaller.unmarshal(java.io.Reader)" resolve="unmarshal" />
+                  <node concept="2ShNRf" id="7vTu8gzZNTO" role="37wK5m">
+                    <node concept="1pGfFk" id="7vTu8gzZNTP" role="2ShVmc">
+                      <ref role="37wK5l" to="guwi:~StringReader.&lt;init&gt;(java.lang.String)" resolve="StringReader" />
+                      <node concept="Xl_RD" id="7vTu8gzZNTQ" role="37wK5m">
+                        <property role="Xl_RC" value="&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot; standalone=\&quot;yes\&quot;?&gt;&lt;command name=\&quot;Hello JAXB\&quot;&gt;&lt;subCommand name=\&quot;a subCommand\&quot;/&gt;&lt;/command&gt;" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7vTu8gzZLNI" role="3cqZAp">
+          <node concept="2OqwBi" id="7vTu8gzZMe1" role="3clFbG">
+            <node concept="10M0yZ" id="7vTu8gzZM0o" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="7vTu8gzZMpo" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="2YIFZM" id="7vTu8gzZNoI" role="37wK5m">
+                <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                <node concept="Xl_RD" id="7vTu8gzZNvU" role="37wK5m">
+                  <property role="Xl_RC" value="%s" />
+                </node>
+                <node concept="2OqwBi" id="7vTu8gzZPvk" role="37wK5m">
+                  <node concept="37vLTw" id="7vTu8gzZPlG" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7vTu8gzZNTK" resolve="unmarshalled" />
+                  </node>
+                  <node concept="liA8E" id="7vTu8gzZPAN" role="2OqNvi">
+                    <ref role="37wK5l" to="bzjo:~Command.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -146,7 +205,7 @@
           </node>
         </node>
       </node>
-      <node concept="3uibUv" id="lCy2bcWXck" role="Sfmx6">
+      <node concept="3uibUv" id="7vTu8gzZIrd" role="Sfmx6">
         <ref role="3uigEE" to="eaz0:~JAXBException" resolve="JAXBException" />
       </node>
     </node>
