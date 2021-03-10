@@ -235,7 +235,7 @@
             <node concept="L2wRC" id="7vTu8g$0k4f" role="39821P">
               <ref role="L2wRA" node="lCy2bcXdmO" resolve="RuntimeUsingJAXB" />
               <node concept="3yLZsm" id="7vTu8g$0kNi" role="3yL2VB">
-                <property role="3yLZsk" value="lib/simple-api-with-jaxb-annotations-1.0-SNAPSHOT.jar" />
+                <property role="3yLZsk" value="../lib/simple-api-with-jaxb-annotations-1.0-SNAPSHOT.jar" />
                 <node concept="398BVA" id="7vTu8g$0oYU" role="3yLZsn">
                   <ref role="398BVh" node="lCy2bcXejX" resolve="usage_sample_home" />
                   <node concept="2Ry0Ak" id="7vTu8g$0oZ0" role="iGT6I">
