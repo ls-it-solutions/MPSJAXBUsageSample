@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="mps-jaxb-runtime" uuid="8e95167d-4ec0-4b7d-b2e5-7350fe0c5fc9" moduleVersion="0" compileInMPS="true">
+<solution name="mps-jaxb-runtime" uuid="8e95167d-4ec0-4b7d-b2e5-7350fe0c5fc9" moduleVersion="0" compileInMPS="false">
   <readOnlyStubs/>
   <models>
     <modelRoot type="java_classes">
