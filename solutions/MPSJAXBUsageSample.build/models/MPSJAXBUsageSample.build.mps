@@ -102,6 +102,10 @@
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
+      <concept id="1265949165890536423" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_ModuleJars" flags="ng" index="L2wRC">
+        <reference id="1265949165890536425" name="module" index="L2wRA" />
+        <child id="4356762679305730677" name="jarLocations" index="3yL2VB" />
+      </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
@@ -111,6 +115,10 @@
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
         <property id="5253498789149547713" name="reexport" index="3bR36h" />
         <reference id="5253498789149547705" name="module" index="3bR37D" />
+      </concept>
+      <concept id="4356762679305675652" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_ModuleXml_CustomJarLocation" flags="ng" index="3yLZsm">
+        <property id="4356762679305675654" name="packagedLocation" index="3yLZsk" />
+        <child id="4356762679305675653" name="path" index="3yLZsn" />
       </concept>
       <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
         <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
@@ -179,6 +187,76 @@
         <node concept="m$_wl" id="lCy2bcXdnd" role="39821P">
           <ref role="m_rDy" node="lCy2bcXdmW" resolve="MPSJAXBUsageSample" />
           <node concept="pUk6w" id="7vTu8gzZJvg" role="pUk7w" />
+          <node concept="398223" id="7vTu8g$0k2I" role="39821P">
+            <node concept="3_J27D" id="7vTu8g$0k2K" role="Nbhlr">
+              <node concept="3Mxwew" id="7vTu8g$0k2W" role="3MwsjC">
+                <property role="3MwjfP" value="languages" />
+              </node>
+            </node>
+            <node concept="L2wRC" id="7vTu8g$0k3h" role="39821P">
+              <ref role="L2wRA" node="7vTu8gzZIWZ" resolve="mps-jaxb-runtime" />
+              <node concept="3yLZsm" id="7vTu8g$0kVD" role="3yL2VB">
+                <property role="3yLZsk" value="/lib/javax.activation-1.2.0.jar" />
+                <node concept="398BVA" id="7vTu8g$0kWr" role="3yLZsn">
+                  <ref role="398BVh" node="lCy2bcXdmG" resolve="mps_home" />
+                  <node concept="2Ry0Ak" id="7vTu8g$0kY5" role="iGT6I">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7vTu8g$0kZr" role="2Ry0An">
+                      <property role="2Ry0Am" value="javax.activation-1.2.0.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3yLZsm" id="7vTu8g$0l52" role="3yL2VB">
+                <property role="3yLZsk" value="/lib/jaxb-api-2.3.1.jar" />
+                <node concept="398BVA" id="7vTu8g$0l53" role="3yLZsn">
+                  <ref role="398BVh" node="lCy2bcXdmG" resolve="mps_home" />
+                  <node concept="2Ry0Ak" id="7vTu8g$0l54" role="iGT6I">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7vTu8g$0l7S" role="2Ry0An">
+                      <property role="2Ry0Am" value="jaxb-api-2.3.1.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3yLZsm" id="7vTu8g$0l5D" role="3yL2VB">
+                <property role="3yLZsk" value="/lib/jaxb-runtime-2.3.1.jar" />
+                <node concept="398BVA" id="7vTu8g$0l5E" role="3yLZsn">
+                  <ref role="398BVh" node="lCy2bcXdmG" resolve="mps_home" />
+                  <node concept="2Ry0Ak" id="7vTu8g$0l5F" role="iGT6I">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7vTu8g$0l9L" role="2Ry0An">
+                      <property role="2Ry0Am" value="jaxb-runtime-2.3.1.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="L2wRC" id="7vTu8g$0k4f" role="39821P">
+              <ref role="L2wRA" node="lCy2bcXdmO" resolve="RuntimeUsingJAXB" />
+              <node concept="3yLZsm" id="7vTu8g$0kNi" role="3yL2VB">
+                <property role="3yLZsk" value="lib/simple-api-with-jaxb-annotations-1.0-SNAPSHOT.jar" />
+                <node concept="398BVA" id="7vTu8g$0oYU" role="3yLZsn">
+                  <ref role="398BVh" node="lCy2bcXejX" resolve="usage_sample_home" />
+                  <node concept="2Ry0Ak" id="7vTu8g$0oZ0" role="iGT6I">
+                    <property role="2Ry0Am" value="solutions" />
+                    <node concept="2Ry0Ak" id="7vTu8g$0oZ1" role="2Ry0An">
+                      <property role="2Ry0Am" value="RuntimeUsingJAXB" />
+                      <node concept="2Ry0Ak" id="7vTu8g$0oZ2" role="2Ry0An">
+                        <property role="2Ry0Am" value="lib" />
+                        <node concept="2Ry0Ak" id="7vTu8g$0oZ3" role="2Ry0An">
+                          <property role="2Ry0Am" value="simple-api-with-jaxb-annotations-1.0-SNAPSHOT.jar" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="L2wRC" id="7vTu8g$0qCz" role="39821P">
+              <ref role="L2wRA" node="lCy2bcXdmU" resolve="SolutionUsingRuntime" />
+            </node>
+          </node>
           <node concept="398223" id="lCy2bcXhz6" role="39821P">
             <node concept="3_J27D" id="lCy2bcXhz7" role="Nbhlr">
               <node concept="3Mxwew" id="lCy2bcXhzk" role="3MwsjC">
