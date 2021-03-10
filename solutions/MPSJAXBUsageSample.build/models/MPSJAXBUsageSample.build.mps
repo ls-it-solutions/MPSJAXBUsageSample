@@ -172,32 +172,44 @@
   <node concept="1l3spW" id="lCy2bcXdmD">
     <property role="TrG5h" value="MPSJAXBUsageSample" />
     <property role="2DA0ip" value="../.." />
-    <node concept="PiPfp" id="3oYx7oPX3uG" role="3989C9">
-      <property role="TrG5h" value="javax-activation" />
-      <node concept="25yagZ" id="3oYx7oPX3Ak" role="PiKyV">
-        <node concept="3yqu4x" id="3oYx7oPX3Ai" role="25yagT">
-          <node concept="3yrxFa" id="3oYx7oPX3B6" role="3yqu4I">
-            <ref role="3yrxFb" node="3u09dTZvO$N" />
+    <node concept="1X3_iC" id="4GUM0hoiwEY" role="lGtFl">
+      <property role="3V$3am" value="parts" />
+      <property role="3V$3ak" value="798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363/7389400916848080626" />
+      <node concept="PiPfp" id="3oYx7oPX3uG" role="8Wnug">
+        <property role="TrG5h" value="javax-activation" />
+        <node concept="25yagZ" id="3oYx7oPX3Ak" role="PiKyV">
+          <node concept="3yqu4x" id="3oYx7oPX3Ai" role="25yagT">
+            <node concept="3yrxFa" id="3oYx7oPX3B6" role="3yqu4I">
+              <ref role="3yrxFb" node="3u09dTZvO$N" />
+            </node>
           </node>
         </node>
       </node>
     </node>
-    <node concept="PiPfp" id="3oYx7oPX3EA" role="3989C9">
-      <property role="TrG5h" value="jaxb-api" />
-      <node concept="25yagZ" id="3oYx7oPX3EB" role="PiKyV">
-        <node concept="3yqu4x" id="3oYx7oPX3EC" role="25yagT">
-          <node concept="3yrxFa" id="3oYx7oPX3K2" role="3yqu4I">
-            <ref role="3yrxFb" node="3u09dTZvO_7" />
+    <node concept="1X3_iC" id="4GUM0hoiwEZ" role="lGtFl">
+      <property role="3V$3am" value="parts" />
+      <property role="3V$3ak" value="798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363/7389400916848080626" />
+      <node concept="PiPfp" id="3oYx7oPX3EA" role="8Wnug">
+        <property role="TrG5h" value="jaxb-api" />
+        <node concept="25yagZ" id="3oYx7oPX3EB" role="PiKyV">
+          <node concept="3yqu4x" id="3oYx7oPX3EC" role="25yagT">
+            <node concept="3yrxFa" id="3oYx7oPX3K2" role="3yqu4I">
+              <ref role="3yrxFb" node="3u09dTZvO_7" />
+            </node>
           </node>
         </node>
       </node>
     </node>
-    <node concept="PiPfp" id="3oYx7oPX3Gw" role="3989C9">
-      <property role="TrG5h" value="jaxb-runtime" />
-      <node concept="25yagZ" id="3oYx7oPX3Gx" role="PiKyV">
-        <node concept="3yqu4x" id="3oYx7oPX3Gy" role="25yagT">
-          <node concept="3yrxFa" id="3oYx7oPX3PX" role="3yqu4I">
-            <ref role="3yrxFb" node="3u09dTZvO_B" />
+    <node concept="1X3_iC" id="4GUM0hoiwF0" role="lGtFl">
+      <property role="3V$3am" value="parts" />
+      <property role="3V$3ak" value="798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363/7389400916848080626" />
+      <node concept="PiPfp" id="3oYx7oPX3Gw" role="8Wnug">
+        <property role="TrG5h" value="jaxb-runtime" />
+        <node concept="25yagZ" id="3oYx7oPX3Gx" role="PiKyV">
+          <node concept="3yqu4x" id="3oYx7oPX3Gy" role="25yagT">
+            <node concept="3yrxFa" id="3oYx7oPX3PX" role="3yqu4I">
+              <ref role="3yrxFb" node="3u09dTZvO_B" />
+            </node>
           </node>
         </node>
       </node>
